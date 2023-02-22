@@ -1,0 +1,123 @@
+/* This the CSS container(grid) for nav bar with three sections */
+.container {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: snow;
+  }
+  
+  .container.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    
+  }
+  
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+
+.section1, .section2, .section3 {
+    padding:10px;
+    
+}
+
+/* This is the left menu text for navbar */
+.topnavleft {
+    background-color: snow;
+    overflow: hidden;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+
+.topnavleft a{
+    float: left;
+    color: #333333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnavleft a:hover {
+    background-color: snow;
+    color: grey;
+}
+
+.topnavleft a.active {
+    color: 333333;
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+.topnavleft img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* This is the center img for navbar */
+.topnavcenter{
+    background-color: snow;
+    overflow: hidden;
+    text-align: center;
+}
+
+.topnavcenter img{
+    width: 80px;
+    height: 80px;
+}
+
+.topnavcenter img:hover{
+    opacity: 0.5;
+}
+
+/* this is the right side nav bar */
+.topnavright{
+
+    background-color: snow;
+    overflow: hidden;
+    padding-top: 3%;
+    padding-right: 5%;
+}
+
+.topnavright svg{
+    float: right;
+    text-align: center;
+    padding-top: 8px;
+    padding-right: 8px;
+}
+
+.topnavright a{
+    float: right;
+    color: #333333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnavright a:hover {
+    background-color: snow;
+    color: grey;
+}
+
+.topnavright a.active {
+    color: 333333;
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
